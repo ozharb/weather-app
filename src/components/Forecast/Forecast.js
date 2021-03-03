@@ -34,7 +34,7 @@ const Forecast = () => {
         fetch("https://community-open-weather-map.p.rapidapi.com/forecast?q=san%20francisco%2Cus", {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "6851e9a23bmsh5e2d02ba760e315p12ea4djsn83bd7ac9e844",
+                "x-rapidapi-key": process.env.REACT_APP_API_KEY,
                 "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
             }
         })
